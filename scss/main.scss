@@ -1,0 +1,393 @@
+$main-color: #ffffff;
+$main-text-color: white;
+$pink-color: rgba(218, 28, 92, 1.00);
+$grrey: rgba(44, 46, 61, 0.90);
+$font: 'Lato';
+$img-width: 100%;
+$pcolor: grey;
+$lh: 1.5;
+$small-block-width: 23%;
+$title-font-size: 30px;
+$main-font-size: 19px;
+$light-grey: #f7f7f7;
+
+
+body {
+	margin: 0
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+
+menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: $main-color;
+    
+    ul {
+        overflow: hidden;
+        margin: 0 70 px;
+        
+        li{
+            float: left;
+            list-style-type: none;
+            margin-top: 20px;
+            
+            img {
+                margin-right: 70px;
+            }
+            
+            a {
+                display: block;
+                padding: 15px;
+                color: dimgray;
+                text-decoration: none; 
+            }
+        }
+    }
+}
+
+page {
+    display: block;
+    width: 100%;
+    
+    img{
+        width: $img-width;
+        height: 100%;
+    }
+}
+
+@mixin header-text($hfont-size: 20px, $hwidth: 350px, $hheight: 30px, $hcolor: $main-text-color , $hfont-family: Lato, $htext-align: center, $hposition: absolute, $htop: 0, $hbottom: 0, $hleft: 0, $hright: 0, $hmargin: 100px auto, $hpadding: 5px, $hbackground: $grrey) {
+
+    font-size: $hfont-size;
+    width: $hwidth;
+    height: $hheight;
+    color: $hcolor;
+    font-family: $hfont-family;
+    text-align: $htext-align;
+    position: $hposition;
+    top: $htop;
+    bottom: $hbottom;
+    left: $hleft;
+    right: $hright;
+    margin: $hmargin;
+    padding: $hpadding;
+    background-color: $hbackground;
+}
+
+.header1 { @include header-text($hfont-size: 50px, $hwidth: 350px, $hheight: 60px,  $hcolor: $pink-color, $hmargin: 100px auto, $hpadding: 10px); }
+.header2 { @include header-text($hwidth: 520px, $hmargin: 200px auto); }
+.header3 { @include header-text($hwidth: 200px, $hmargin: 250px auto); }
+
+center {
+    width: 100%;
+    height: auto; 
+    margin-top: 0; 
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+news{
+    display: block;
+    width: 80%; 
+    overflow: hidden; 
+    margin: 75px auto; 
+    position: relative;
+
+    
+    .new {
+        width: $small-block-width;
+        height: 450px; 
+        float: left;
+        margin: 0 40px 0 0;
+        background: $main-color;
+        
+        img {
+            width: $img-width;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: $pcolor;
+            font-family: $font;
+            text-align: left;
+            line-height: $lh;
+            margin: 20px 0;
+        }
+    }
+}
+    
+    .block1 {
+        width: $small-block-width; 
+        height: 450px; 
+        background: $pink-color; 
+        float: left;
+        margin: 0 0 0 auto;
+        
+        p {
+            color: whitesmoke; 
+            font-family: $font; 
+            text-align: left;
+            margin: 20px 20px;
+            line-height: $lh; 
+        }
+        
+    }
+    
+
+   
+    .block2 {
+        height: 550px; 
+        
+        .a {
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-image: url(images/home-bl-left.jpg);
+            
+            h1 {
+                color: $main-text-color; 
+                font-family: $font;
+                text-align: left;
+                margin: 100px 50px 30px 50px;
+                font-size: $title-font-size;
+            }
+            
+            p {
+                color: $main-text-color;
+                font-family: $font;
+                line-height: $lh;
+                margin: 30px 50px;
+                text-align: left;
+                font-size: $main-font-size+(-2px);
+            }
+            
+            a {
+                display: block;
+                padding: 10px 5px 5px 5px;
+                width: 110px; 
+                height:30px;
+                background-color: $pink-color;
+                color: $main-text-color;
+                text-decoration: none;
+                float:left;
+                margin: 0 0 0 50px;
+            }
+        }
+
+        .b {
+            height: 100%;
+            width: 50%;
+            float: left;
+            column-count: 2;
+            column-width: 50%;
+            background-color: $light-grey;
+            
+            p {
+                color: $pcolor;
+                font-family: $font;
+                line-height: $lh;
+                padding: 30px 40px 0 65px;
+                text-align: left;
+                font-size: $main-font-size;}
+            img {
+                float: left;
+            }
+        }
+}
+    
+ .more {
+     display: block; 
+     width: 80%;
+     height: 500px; 
+     overflow: hidden; 
+     margin: 100px auto; 
+     position: relative;
+     
+     .artimimage {
+         width: 340px;
+         height: 90%; 
+         float: left;
+         margin: 2% 2% 2% 0;
+         background: $main-color;
+     
+     
+        img {
+         width: $img-width;
+         height: 100%;
+         }
+     }
+     
+     .readmore {
+         width: 20%;
+         height: 100%;
+         background-color: $grrey; 
+         float: left;
+         margin: 0 1%;
+         
+         img {
+             width: $img-width;
+             height: 160px; 
+         }
+         
+          p {
+              text-align: left;
+              color: $main-text-color;
+              font-family: $font;
+              line-height: $lh;
+              margin: 20px 30px;
+         }
+         
+         a {
+             display: block;
+             padding: 5px; 
+             width: 90px; 
+             height:20px;
+             float: right; 
+             background-color: $pink-color;
+             color: $main-text-color;
+             text-decoration: none;
+         }
+}
+}
+
+.watch_artim {
+    display: block; 
+    width: 100%;
+    height: 700px; 
+    background-color: $light-grey;  
+    margin: 100px 0;
+
+.watch_text {
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    h1 {
+        display:block; 
+        color: $pcolor;
+        font-size: $title-font-size;
+        font-family: $font;
+        text-align: left; 
+        padding: 100px;
+        padding-bottom: 20px; }
+
+    p {
+        display:block; 
+        color: $pcolor;
+        font-size: ($main-font-size+(-1px));
+        font-family: $font;
+        text-align: left; 
+        padding: 15px 100px;
+        line-height: $lh; }
+    
+    a {
+        display: block;
+        padding: 10px 5px 5px 5px; 
+        width: 110px; 
+        height:30px; 
+        background-color: $pink-color;
+        color: $main-text-color;
+        text-decoration: none;
+        float:left;
+        margin: 20px 0 20px 100px;}
+    }
+
+.watch_image {
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    img {
+        margin: 50px 0;
+        margin-right: 300px;
+    }
+    }
+}
+
+.wordpress {
+    width: 100%;
+    height: 420px;
+    background-image: url(images/home-bl-lef.jpg);
+    overflow: hidden;
+    
+    h1 {
+        display:block; 
+        color: $main-text-color;
+        font-size: $title-font-size;
+        font-family: $font;
+        text-align: center; 
+        padding: 100px 0 0 0; }
+    
+    p {
+        color: $main-text-color;
+        font-size: ($main-font-size+(-4px));
+        font-family: $font; 
+        padding: 30px;
+        width: 700px;
+    }
+    }
+
+.wordpress_buttons {
+    width: 20%;
+    height: 40px;
+
+.button {
+    display: block; 
+    width: 45%; 
+    height: 100%; 
+    float:left;
+    margin:0 2%;
+    background-color: $pink-color;
+
+    a {
+        display: block; 
+        color: $main-text-color;
+        text-decoration: none; 
+        padding: 10px;}
+    }
+}
+    
+.our_team {
+    width: 80%;
+    height: 600px;
+    margin-top: 70px;
+    
+    .team {
+        width: ($small-block-width+5%);
+        height: 100%; 
+        margin: 0 20px;
+        float: left;
+
+        img {
+            width: $img-width;
+        }
+
+        p {
+            text-align: left;
+            color: $pcolor;
+            font-family: $font;
+            line-height: $lh;
+            margin:20px 0;
+        }
+        
+        h4 {
+            text-align: left;
+            color: $pink-color;
+            font-family: $font;
+            line-height: $lh;
+        }
+    }
+}
