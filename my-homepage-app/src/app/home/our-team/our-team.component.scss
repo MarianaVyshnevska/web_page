@@ -1,0 +1,34 @@
+@import "../../variables";
+
+.our_team {
+    width: 80%;
+    height: 600px;
+    margin-top: 70px;
+    margin: 70px auto 0 auto;
+    
+    .team {
+        width: ($small-block-width+5%);
+        height: 100%; 
+        margin: 0 20px;
+        float: left;
+
+        img {
+            width: $img-width;
+        }
+
+        p {
+            text-align: left;
+            color: $pcolor;
+            font-family: $font;
+            line-height: $lh;
+            margin:20px 0;
+        }
+        
+        h4 {
+            text-align: left;
+            color: $pink-color;
+            font-family: $font;
+            line-height: $lh;
+        }
+    }
+}

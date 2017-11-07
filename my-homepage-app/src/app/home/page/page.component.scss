@@ -1,0 +1,36 @@
+@import "../../variables";
+
+
+.page {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    img{
+        width: $img-width;
+        height: 100%;
+    }
+
+
+@mixin header-text($hfont-size: 20px, $hwidth: 350px, $hheight: 30px, $hcolor: $main-text-color , $hfont-family: Lato, $htext-align: center, $hposition: absolute, $htop: 0, $hbottom: 0, $hleft: 0, $hright: 0, $hmargin: 100px auto, $hpadding: 5px, $hbackground: $grrey) {
+
+    font-size: $hfont-size;
+    width: $hwidth;
+    height: $hheight;
+    color: $hcolor;
+    font-family: $hfont-family;
+    text-align: $htext-align;
+    position: $hposition;
+    top: $htop;
+    bottom: $hbottom;
+    left: $hleft;
+    right: $hright;
+    margin: $hmargin;
+    padding: $hpadding;
+    background-color: $hbackground;
+}
+
+.header1 { @include header-text($hfont-size: 50px, $hwidth: 350px, $hheight: 60px,  $hcolor: $pink-color, $hmargin: 100px auto, $hpadding: 10px); }
+.header2 { @include header-text($hwidth: 520px, $hmargin: 200px auto); }
+.header3 { @include header-text($hwidth: 200px, $hmargin: 250px auto); }
+}
