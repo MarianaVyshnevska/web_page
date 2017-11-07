@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.more {
+     display: block; 
+     width: 80%;
+     height: 500px; 
+     overflow: hidden; 
+     margin: 100px auto; 
+     position: relative;
+     
+     .artimimage {
+         width: 340px;
+         height: 90%; 
+         float: left;
+         margin: 2% 2% 2% 0;
+         background: $main-color;
+     
+     
+        img {
+         width: $img-width;
+         height: 100%;
+         }
+     }
+     
+     .readmore {
+         width: 20%;
+         height: 100%;
+         background-color: $grrey; 
+         float: left;
+         margin: 0 1%;
+         
+         img {
+             width: $img-width;
+             height: 160px; 
+         }
+         
+          p {
+              text-align: left;
+              color: $main-text-color;
+              font-family: $font;
+              line-height: $lh;
+              margin: 20px 30px;
+         }
+         
+         a {
+             display: block;
+             padding: 5px 0px 5px 20px; 
+             width: 90px; 
+             height:20px;
+             float: right; 
+             background-color: $pink-color;
+             color: $main-text-color;
+             text-decoration: none;
+         }
+}
+}

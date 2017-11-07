@@ -1,0 +1,62 @@
+@import "../../variables";
+
+.block2 {
+        height: 550px; 
+        
+        .a {
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-image: url(../../../assets/images/home-bl-left.jpg);
+            
+            h1 {
+                color: $main-text-color; 
+                font-family: $font;
+                text-align: left;
+                margin: 100px 50px 30px 50px;
+                font-size: $title-font-size;
+            }
+            
+            p {
+                color: $main-text-color;
+                font-family: $font;
+                line-height: $lh;
+                margin: 30px 50px;
+                text-align: left;
+                font-size: $main-font-size+(-2px);
+            }
+            
+            a {
+                display: block;
+                padding: 10px 0px 5px 25px;
+                width: 110px; 
+                height:30px;
+                background-color: $pink-color;
+                color: $main-text-color;
+                text-decoration: none;
+                float:left;
+                margin: 0 0 0 50px;
+            }
+        }
+
+        .b {
+            height: 100%;
+            width: 50%;
+            float: left;
+            column-count: 2;
+            column-width: 50%;
+            background-color: $light-grey;
+            
+            p {
+                color: $pcolor;
+                font-family: $font;
+                line-height: $lh;
+                padding: 30px 40px 0 65px;
+                margin: 0;
+                text-align: left;
+                font-size: $main-font-size;}
+            img {
+                float: left;
+            }
+        }
+}

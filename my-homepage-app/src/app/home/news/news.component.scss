@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.news{
+    display: block;
+    width: 80%; 
+    overflow: hidden; 
+    margin: 75px auto; 
+    position: relative;
+
+    
+    .new {
+        width: $small-block-width;
+        height: 450px; 
+        float: left;
+        margin: 0 40px 0 0;
+        background: $main-color;
+        
+        img {
+            width: $img-width;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: $pcolor;
+            font-family: $font;
+            text-align: left;
+            line-height: $lh;
+            margin: 20px 0;
+        }
+    }
+
+    
+    .block1 {
+        width: $small-block-width; 
+        height: 450px; 
+        background: $pink-color; 
+        float: left;
+        margin: 0 0 0 auto;
+        
+        p {
+            color: whitesmoke; 
+            font-family: $font; 
+            text-align: left;
+            margin: 20px 20px;
+            line-height: $lh; 
+        }
+        
+    }
+}

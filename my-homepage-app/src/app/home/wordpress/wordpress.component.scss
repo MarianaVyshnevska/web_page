@@ -1,0 +1,49 @@
+@import "../../variables";
+
+
+.wordpress {
+    width: 100%;
+    height: 420px;
+    background-image: url(../../../assets/images/home-bl-lef.jpg);
+    overflow: hidden;
+    
+    h1 {
+        display:block; 
+        color: $main-text-color;
+        font-size: $title-font-size;
+        font-family: $font;
+        text-align: center; 
+        padding: 100px 0 0 0;
+        margin:0; }
+    
+    p {
+        color: $main-text-color;
+        font-size: ($main-font-size+(-4px));
+        font-family: $font; 
+        padding: 30px;
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    }
+
+.wordpress_buttons {
+    width: 20%;
+    height: 40px;
+    margin: 0 auto;
+
+.button {
+    display: block; 
+    width: 45%; 
+    height: 100%; 
+    float:left;
+    margin:0 2%;
+    background-color: $pink-color;
+
+    a {
+        display: block; 
+        color: $main-text-color;
+        text-decoration: none; 
+        padding: 10px 0px 5px 30px; }
+    }
+}
