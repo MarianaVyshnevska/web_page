@@ -1,0 +1,61 @@
+@import "../../variables";
+
+
+
+.watch_artim {
+    display: block; 
+    width: 100%;
+    height: 700px; 
+    background-color: $light-grey;  
+    margin: 100px 0;
+
+.watch_text {
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    h1 {
+        display:block; 
+        color: $pcolor;
+        font-size: $title-font-size;
+        font-family: $font;
+        text-align: left; 
+        padding: 100px;
+        padding-bottom: 20px; 
+        margin: 0;
+        }
+
+    p {
+        display:block; 
+        color: $pcolor;
+        font-size: ($main-font-size+(-1px));
+        font-family: $font;
+        text-align: left; 
+        padding: 15px 100px;
+        line-height: $lh; 
+        margin: 0;
+        }
+    
+    a {
+        display: block;
+        padding: 10px 0px 5px 25px; 
+        width: 110px; 
+        height:30px; 
+        background-color: $pink-color;
+        color: $main-text-color;
+        text-decoration: none;
+        float:left;
+        margin: 20px 0 20px 100px;}
+    }
+
+.watch_image {
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    img {
+        margin: 50px 0;
+        margin-right: 300px;
+    }
+    }
+}
